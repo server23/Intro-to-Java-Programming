@@ -30,5 +30,27 @@ public class Exercise_01_11 {
 		System.out.println(312032486 + (((31536000 / 7)
 									 - (31536000 / 13)
 									 + (31536000 / 45)) * 5));
+	
+		/* better/easier code version of this exercise
+		
+		int birth = 7;
+		int death = 13;
+		int immigrant = 45;
+		int year = 365;
+		int currentPopulation = 312032486;
+		int yearBirth = (60 * 60 * 24 * year) / birth;
+		int yearDeath = (60 * 60 * 24 * year) / death;
+		int yearImmigrant = (60 * 60 * 24 * year) / immigrant;
+		int yearPopulation = yearBirth + yearImmigrant - yearDeath;
+		
+		System.out.println ("Current population= " + (currentPopulation));
+		System.out.println ("1st year population= " + (currentPopulation + (1 * yearPopulation)));
+		System.out.println ("2nd year population= " + (currentPopulation + (2 * yearPopulation)));
+		System.out.println ("3rd year population= " + (currentPopulation + (3 * yearPopulation)));
+		System.out.println ("4th year population= " + (currentPopulation + (4 * yearPopulation)));
+		System.out.println ("5th year population= " + (currentPopulation + (5 * yearPopulation)));
+		
+		*/
+		
 	}
 }
